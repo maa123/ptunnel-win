@@ -37,4 +37,6 @@ jobs:
         dir
         cd ..
     - name: make
-      run: mingw32-make ptunnel.exe
+      run: gcc ptunnel.c md5.c -L".\WpdPack\Lib" -I".\WpdPack\Include" -lwpcap -lwsock32 -g -Wall -DWIN32 -o ptunnel.exe
+    - name: check2
+      run: dir
