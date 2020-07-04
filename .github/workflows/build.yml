@@ -37,4 +37,4 @@ jobs:
         dir
         cd ..
     - name: make
-      run: mingw32-make
+      run: mingw32-make ptunnel.exe
